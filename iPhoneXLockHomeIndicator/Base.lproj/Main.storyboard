@@ -29,12 +29,17 @@ Tapping a control has the same result whether or not it's behind the indicator.<
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUe-9t-hVB">
+                                <rect key="frame" x="163" y="636" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iUe-9t-hVB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6sr-bZ-lHr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pq6-cc-Jkb" secondAttribute="trailing" id="KJa-Qx-qOs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="pq6-cc-Jkb" secondAttribute="top" id="MhQ-GG-g1S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="pq6-cc-Jkb" secondAttribute="leading" id="WEM-EE-hNG"/>
+                            <constraint firstItem="iUe-9t-hVB" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="jnj-xu-ytF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pq6-cc-Jkb" secondAttribute="bottom" id="pD6-7V-xeT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
