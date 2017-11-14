@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     // This will give the indicator a more subtle appearance and
     // change it's behavior so that two swipes are required to exit your app.
     override func preferredScreenEdgesDeferringSystemGestures() -> UIRectEdge {
-        return [.bottom, .top] // .bottom for locking home indicator, .top for locking control center
+        return [.bottom, .top] // .bottom for protecting home indicator, .top for protecting control center
     }
     
     // If you want to use edge protection to lock the home indicator,
@@ -27,6 +27,14 @@ class ViewController: UIViewController {
 }
 
 /*
+ Update your apps for iPhone X.
+ https://developer.apple.com/ios/update-apps-for-iphone-x/
+ 
+ Screen Edge Gestures:
+    The display on iPhone X uses screen edge gestures to provide access to Home screen, app switcher, Notification Center, and Control Center. Avoid interfering with these gestures. Move controls into the safe area and adjust your UI. In rare cases, you may consider using edge protect, in which the first swipe invokes the app-specific gesture and a second-swipe invokes the system gesture.
+ 
+ 
+ 
  Designing for iPhone X
  https://developer.apple.com/videos/play/fall2017/801/
  
